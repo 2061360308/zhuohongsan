@@ -35,6 +35,9 @@
 
 5. 大功告成，注意你不能直接在文件夹打开.html文件，你需要在web目录启动一个简单的http服务器，有很多工具可以帮助你，例如VS_Code的Live Server（Five Server）插件就是一个很好的选择
 
+## 开发文档
+见 [Wiki.md](./Wiki.md)
+
 ## 附： Emscripten安装
 ```bash
 # Get the emsdk repo
