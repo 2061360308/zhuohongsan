@@ -127,7 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="snake.c" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="FrameManager.cpp" />
+    <ClCompile Include="LaunchFrame.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlayingFrame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Frame.h" />
+    <ClInclude Include="FrameManager.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="LaunchFrame.h" />
+    <ClInclude Include="PlayingFrame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
