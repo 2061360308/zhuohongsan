@@ -30,6 +30,9 @@
     <ClCompile Include="FrameManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CardContainer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Frame.h">
@@ -45,6 +48,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="global.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CardContainer.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

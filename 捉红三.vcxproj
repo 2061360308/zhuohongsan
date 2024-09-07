@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CardContainer.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="FrameManager.cpp" />
     <ClCompile Include="LaunchFrame.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="PlayingFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CardContainer.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="FrameManager.h" />
     <ClInclude Include="global.h" />
