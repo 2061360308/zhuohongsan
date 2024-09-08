@@ -29,7 +29,8 @@
 // 主程序入口
 int main()
 {
-    //std::cout<<"你好"<<std::endl;
+    // 设置窗口可调整大小
+    SetConfigFlags(FLAG_WINDOW_RESIZABLE);
 
     // 初始化窗口，参数分别为宽度、高度和窗口标题
     InitWindow(screenWidth, screenHeight, "Raylib Menu Example");

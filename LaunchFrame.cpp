@@ -6,16 +6,8 @@ LaunchFrame::LaunchFrame() {
     this->name = "MAIN_MENU";  // 将帧的名称设置为 "MAIN_MENU"
 }
 
-// 初始化函数，设置按钮的位置和标签
+// 初始化函数，设置按钮标签
 void LaunchFrame::init() {
-    // 计算按钮的初始位置
-    const float startX = screenWidth / 2.0f - buttonWidth / 2.0f;
-    const float startY = screenHeight / 2.0f - (buttonHeight * 0.5f) - buttonSpacing;
-
-    // 设置每个按钮的位置和尺寸
-    buttons[0] = { startX, startY, buttonWidth, buttonHeight };
-    buttons[1] = { startX, startY + buttonHeight + buttonSpacing, buttonWidth, buttonHeight };
-
     // 设置每个按钮的标签
     buttonLabels[0] = "Create Room";
     buttonLabels[1] = "Join Room";
@@ -26,6 +18,10 @@ void LaunchFrame::init() {
 
 // 绘制函数，绘制按钮并处理点击事件
 void LaunchFrame::draw() {
+    // 获取当前窗口尺寸
+    screenWidth = GetScreenWidth();
+    screenHeight = GetScreenHeight();
+
     // 获取当前鼠标的位置
     Vector2 mousePosition = GetMousePosition();
 
@@ -44,6 +40,14 @@ void LaunchFrame::draw() {
     }
 
     if (animationFinished) {
+        // 计算按钮的初始位置
+        const float startX = screenWidth / 2.0f - buttonWidth / 2.0f;
+        const float startY = screenHeight / 2.0f - (buttonHeight * 0.5f) - buttonSpacing;
+
+        // 设置每个按钮的位置和尺寸
+        buttons[0] = { startX, startY, buttonWidth, buttonHeight };
+        buttons[1] = { startX, startY + buttonHeight + buttonSpacing, buttonWidth, buttonHeight };
+
         // 检查每个按钮是否被点击，如果是则切换到 "GAME_PLAY" 帧
         for (int i = 0; i < 2; i++) {
             if (CheckCollisionPointRec(mousePosition, buttons[i]) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {

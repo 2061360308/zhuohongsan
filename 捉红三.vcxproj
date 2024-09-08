@@ -130,6 +130,7 @@
     <ClCompile Include="CardContainer.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="FrameManager.cpp" />
+    <ClCompile Include="global.cpp" />
     <ClCompile Include="LaunchFrame.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PlayingFrame.cpp" />
