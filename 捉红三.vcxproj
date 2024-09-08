@@ -134,6 +134,7 @@
     <ClCompile Include="LaunchFrame.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PlayingFrame.cpp" />
+    <ClCompile Include="saveTemp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CardContainer.h" />
